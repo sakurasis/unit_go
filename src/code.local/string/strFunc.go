@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 )
-
+const N = 5
 func main() {
 	str := "Download and start using DBeaver Enterprise edition right now "
 	// to lower format the string

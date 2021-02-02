@@ -8,6 +8,8 @@ func main() {
 	elements[1] = "hello"
 	elements[2] = "hi"
 	elements[3] = "hei"
+
+	fmt.Println(elements[1:3])
 	fmt.Printf("length:%d,plain text:%s\n", len(elements), elements)
 	// delete the element that index is the second element.
 	elements = append(elements[:2], elements[2+1:]...)

@@ -1,6 +1,10 @@
 package github
 
-import "time"
+import (
+	"time"
+
+	"github.com/asaskevich/govalidator"
+)
 
 const IssueURL = "https://api.github.com/search/issues"
 
@@ -22,4 +26,8 @@ type Issue struct {
 type User struct {
 	Login string 
 	HTMLURL string `json:"html_url"`
+}
+
+func init() {
+	govalidator.SetFieldsRequiredByDefault(true)
 }

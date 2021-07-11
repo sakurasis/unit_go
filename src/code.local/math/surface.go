@@ -15,11 +15,11 @@ var (
 )
 
 const (
-	cells = 100
+	cells   = 100
 	xyrange = 30.0
-	angle = math.Pi / 6  // 30
-	blue          = "#0000ff"
-	red           = "#ff0000"
+	angle   = math.Pi / 6 // 30
+	blue    = "#0000ff"
+	red     = "#ff0000"
 )
 
 var sin30, cos30 = math.Sin(angle), math.Cos(angle)
@@ -43,7 +43,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		height, _ = strconv.Atoi(r.Form["height"][0])
 	}
 
-	fmt.Fprintf(w, "<svg xmlns='http://www.w3.org/2000/svg' "+
+	fmt.Fprintf(w, "<svg xmlns='githubIssue://www.w3.org/2000/svg' "+
 		"style='stroke: grey; fill: white; stroke-width: 0.7' "+
 		"width='%d' height='%d'>", width, height)
 	for i := 0; i < cells; i++ {
@@ -64,8 +64,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func corner(i, j int) (float64, float64, bool) {
-	x := xyrange * (float64(i) / cells - 0.5)
-	y := xyrange * (float64(j) / cells - 0.5)
+	x := xyrange * (float64(i)/cells - 0.5)
+	y := xyrange * (float64(j)/cells - 0.5)
 	z := snowPile(x, y)
 
 	sx := float64(width)/2 + (x-y)*cos30*float64(xyscale)

@@ -40,6 +40,6 @@ func add(t *Tree, value int) *Tree {
 
 func main () {
 	values := []int {21, 15, 17, 2, 9, 5}
-	sort(values)
+	sort (values)
 	fmt.Println(values) 
 }

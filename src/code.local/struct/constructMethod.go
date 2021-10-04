@@ -28,7 +28,7 @@ func (s Student) setName2(newName string) {
 	s.name = newName
 }
 
-func (s * Student) getName() string{
+func (s *Student) getName() string {
 	return s.name
 }
 
@@ -44,7 +44,6 @@ func main() {
 	stu.setName("smith")
 	smith := stu.getName()
 	fmt.Printf("the name was changed ? %v\n", miya != tompson)
-	
+
 	fmt.Printf("the next name was change? %v , the name is %s\n", smith != miya, smith)
 }
-

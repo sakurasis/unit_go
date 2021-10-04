@@ -14,7 +14,6 @@ func (p *Person) SetDreams(dreams []string) {
 	p.dreams = dreams
 }
 
-
 func (p *Person) SetDreams1(dreams []string) {
 	p.dreams = make([]string, len(dreams))
 	copy(p.dreams, dreams)

@@ -14,6 +14,6 @@ func test() (ret int) {
 }
 
 func foo(n int) int {
-	defer func() {n++}()             
+	defer func() { n++ }()
 	return n
 }

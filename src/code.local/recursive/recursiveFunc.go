@@ -6,7 +6,7 @@ func recure(num int) int {
 	if num == 0 {
 		return 1
 	}
-	return num * recure(num - 1) 
+	return num * recure(num-1)
 }
 
 func main() {

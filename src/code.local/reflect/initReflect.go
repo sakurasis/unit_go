@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"reflect"
 )
+
 func main() {
 	var price float32 = 3.1415
 	//typeFloat32 := reflect.float32

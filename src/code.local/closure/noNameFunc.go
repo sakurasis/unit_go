@@ -10,7 +10,7 @@ func main() {
 
 func test1() {
 	for i := 0; i < 10; i++ {
-		g := func(x int) { fmt.Printf("%d\t",x)}
+		g := func(x int) { fmt.Printf("%d\t", x) }
 		g(i)
 	}
 	fmt.Printf("\n")

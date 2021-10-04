@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math"
 )
+
 // Sphere a object
 type Sphere struct {
 	radius float64
@@ -20,7 +21,7 @@ func (s *Sphere) SurfaceArea() float64 {
 }
 
 func main() {
-	r := Sphere {
+	r := Sphere{
 		radius: 2,
 	}
 	fmt.Println("radius:", r.radius)

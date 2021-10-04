@@ -1,10 +1,9 @@
 package main
 
 import (
-	"errors"	
+	"errors"
 	"fmt"
 )
-
 
 func main() {
 	err := errors.New("throw new Errors")

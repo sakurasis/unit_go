@@ -28,13 +28,13 @@ func (s *Student) homework() {
 }
 
 func main() {
-	stu1 := &Student {
+	stu1 := &Student{
 		className: "classOne",
-		roomName: "room 202",
-		Person: Person {
-			name: "tompson",
+		roomName:  "room 202",
+		Person: Person{
+			name:   "tompson",
 			gender: true,
-			age: 8,
+			age:    8,
 		},
 	}
 	stu1.work()

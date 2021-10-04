@@ -7,7 +7,7 @@ import (
 
 // Movie -- it describes some properties of the movie
 type Movie struct {
-	Name string
+	Name   string
 	Rating float32
 }
 
@@ -17,8 +17,8 @@ func (mv *Movie) summary() string {
 }
 
 func main() {
-	mv := Movie {
-		Name: "big bucket",
+	mv := Movie{
+		Name:   "big bucket",
 		Rating: 2.454,
 	}
 	fmt.Println(mv.summary())

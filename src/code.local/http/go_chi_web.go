@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net/http"
 	"github.com/go-chi/chi"
+	"net/http"
 )
 
 func main() {
@@ -10,5 +10,5 @@ func main() {
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("welcome to go world."))
 	})
-	http.ListenAndServe(":5000",r)
+	http.ListenAndServe(":5000", r)
 }

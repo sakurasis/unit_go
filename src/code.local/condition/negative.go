@@ -6,7 +6,7 @@ import (
 
 func main() {
 	val := 0
-	for ;val <= 0;{
+	for val <= 0 {
 		fmt.Print("Enter the number which is a integer number:")
 		fmt.Scanf("%d", &val)
 

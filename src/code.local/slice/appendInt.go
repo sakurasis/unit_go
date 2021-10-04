@@ -10,7 +10,7 @@ func appendInt(x []int, y int) []int {
 	} else {
 		zcap := zlen
 		if zcap < 2*len(x) {
-			zcap = 2*len(x)
+			zcap = 2 * len(x)
 		}
 		z = make([]int, zlen, zcap)
 		copy(z, x)
@@ -20,7 +20,7 @@ func appendInt(x []int, y int) []int {
 }
 
 func main() {
-	var x,y []int
+	var x, y []int
 	for i := 0; i < 10; i++ {
 		y = appendInt(x, i)
 		fmt.Printf("%d cap=%d\t%v\n", i, cap(y), y)

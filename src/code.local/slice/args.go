@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 )
-	
+
 func main() {
 	var str, step string
 

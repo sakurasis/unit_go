@@ -38,5 +38,5 @@ func main() {
 	//fmt.Println(f1()) // 5
 	fmt.Println(f2()) // 6
 	fmt.Println(f3()) // 5
-	fmt.Println(f4()) 
+	fmt.Println(f4())
 }

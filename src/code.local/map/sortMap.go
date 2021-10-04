@@ -8,9 +8,9 @@ import (
 func main() {
 	var ages []string
 	names := map[string]int{
-		"adana": 18,
-		"carry": 12,
-		"bob": 20, 
+		"adana":  18,
+		"carry":  12,
+		"bob":    20,
 		"venius": 30,
 	}
 	for name := range names {

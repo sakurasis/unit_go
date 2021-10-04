@@ -3,14 +3,14 @@ package main
 import "fmt"
 
 type Tree struct {
-	value int
-	left,right *Tree
+	value       int
+	left, right *Tree
 }
 
 func sort(values []int) {
 	var root *Tree
 	for _, v := range values {
-		root = add (root, v) 
+		root = add(root, v)
 	}
 	appendValues(values[:0], root)
 }
@@ -38,8 +38,8 @@ func add(t *Tree, value int) *Tree {
 	return t
 }
 
-func main () {
-	values := []int {21, 15, 17, 2, 9, 5}
-	sort (values)
-	fmt.Println(values) 
+func main() {
+	values := []int{21, 15, 17, 2, 9, 5}
+	sort(values)
+	fmt.Println(values)
 }

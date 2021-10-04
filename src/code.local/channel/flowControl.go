@@ -2,16 +2,15 @@ package main
 
 import (
 	"fmt"
-	"time"
 	"strconv"
+	"time"
 )
 
-
 func pingChan(c chan string) {
-	t :=time.NewTicker(1 * time.Millisecond)
-	for i:=0;;i ++{
+	t := time.NewTicker(1 * time.Millisecond)
+	for i := 0; ; i++ {
 		c <- ("ping " + strconv.Itoa(i) + " times")
-		<- t.C
+		<-t.C
 	}
 }
 

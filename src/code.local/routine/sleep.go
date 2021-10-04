@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"time"
 )
+
 func sleepFunc() {
 	now := time.Now()
 	time.Sleep(time.Second * 2)

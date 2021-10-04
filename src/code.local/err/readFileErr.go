@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil")
-
+	"io/ioutil"
+)
 
 func main() {
 	file, err := ioutil.ReadFile("cutegirl.jpg")

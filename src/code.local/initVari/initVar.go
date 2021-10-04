@@ -1,12 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"os"
-	"math"
 	"./trans"
+	"fmt"
+	"math"
+	"os"
 )
-func main () {
+
+func main() {
 	// var (
 	// 	HOME = os.Getenv("PATH")
 	// )
@@ -18,7 +19,7 @@ func main () {
 		fmt.Println("the host is", host)
 	}
 	// arctan(1) = pi/4
-	fmt.Printf("%.10f",4 * math.Atan(1))
+	fmt.Printf("%.10f", 4*math.Atan(1))
 
 	pi2 := 2 * trans.Pi
 	fmt.Printf("pi is %.3f", pi2)

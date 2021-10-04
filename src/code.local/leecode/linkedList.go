@@ -72,7 +72,7 @@ func lookupNode(t *Node, v int) bool {
 
 // 获取链表长度
 func size(t *Node) int {
-	
+
 	if t == nil {
 		fmt.Println("-> 空链表!")
 		return 0

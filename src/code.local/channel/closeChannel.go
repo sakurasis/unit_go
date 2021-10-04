@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	"time")
-
+	"time"
+)
 
 func sendMsg(c chan string) {
 	t := time.NewTicker(1 * time.Second)
 	for {
 		c <- "sending a message"
-		<- t.C
+		<-t.C
 	}
 }
 
@@ -27,11 +27,11 @@ func main() {
 		time.Sleep(2 * time.Second)
 		fmt.Println("stop it......")
 		flagStop <- true
-	} ()
-	
+	}()
+
 	for {
 		select {
-		case <- flagStop: 
+		case <-flagStop:
 			return
 		case msg := <-info:
 			fmt.Println(msg)

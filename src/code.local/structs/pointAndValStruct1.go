@@ -1,8 +1,8 @@
-package main
+package structs
 
 import "fmt"
 
-// Triangle the struct in mathiethic
+// Triangle the structs in mathiethic
 type Triangle struct {
 	width  float64
 	height float64

@@ -4,7 +4,10 @@ import "fmt"
 
 func calc(index string, a, b int) int {
 	ret := a + b
-	fmt.Println(index, a, b, ret)
+	_, err := fmt.Println(index, a, b, ret)
+	if err != nil {
+		return 0
+	}
 	return ret
 }
 

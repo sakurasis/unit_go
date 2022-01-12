@@ -15,7 +15,6 @@ func main() {
 		case x := <-ch:
 			fmt.Println(x)
 		case ch <- i:
-
 			fmt.Println("--", i)
 		}
 	}

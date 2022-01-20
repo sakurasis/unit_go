@@ -2,10 +2,26 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"runtime/trace"
 	"sort"
 )
 
 func main() {
+	//创建trace文件
+	f, err := os.Create("trace.out")
+	if err != nil {
+		panic(err)
+	}
+
+	defer f.Close()
+
+	//启动trace goroutine
+	err = trace.Start(f)
+	if err != nil {
+		panic(err)
+	}
+	defer trace.Stop()
 	arr1 := []int{1, 2, 2, 1, 4}
 	arr2 := []int{2, 2, 4}
 	same := getSameTwo(arr1, arr2)

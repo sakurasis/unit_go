@@ -1,26 +1,40 @@
+/*
+author:admin
+createTime:
+*/
 package main
 
-import "strings"
+import (
+	"sort"
+	"strings"
+)
 
 func main() {
-	slices := []string{"analyse", "analysis"}
-	prefix := longestPrefix(slices)
+	// slices := []string{"analytical", "analysis", "analyse"}
+	println("--------------------------")
+	var idxs = []string{"anmial", "analyse", "analyze"}
+	prefix := getLongestPrefix(idxs)
 	println(prefix)
 }
 
-//longestPrefix  get the longest prefix of string
-func longestPrefix(strs []string) string {
-	if len(strs) <= 0 {
+// getLongestPrefix get the longest prefix string throught using
+// the function which name is index import from the package strings.
+func getLongestPrefix(str []string) string {
+	if len(str) <= 0 {
 		return ""
 	}
-
-	prefix := strs[0]
-	for _, v := range strs {
+	sort.Strings(str)
+	prefix := str[0]
+	// loop the slice.
+	if len(prefix) == 0 {
+		panic("prefix can't be empty characters.")
+	}
+	for _, v := range str {
 		for strings.Index(v, prefix) != 0 {
 			if len(prefix) == 0 {
-				return ""
+				panic("prefix can't be empty characters.")
 			}
-			prefix = prefix[:(len(prefix) - 1)]
+			prefix = prefix[:len(prefix)-1]
 		}
 	}
 	return prefix

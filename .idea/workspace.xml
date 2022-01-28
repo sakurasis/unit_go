@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c43d4f93-8432-42dc-ae47-2538a1bc3d2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/code.local/leecode/getLongestPrefix.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code.local/leecode/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trace.out" afterDir="false" />
+    <list default="true" id="c43d4f93-8432-42dc-ae47-2538a1bc3d2b" name="Changes" comment="feat: test trace in web">
+      <change afterPath="$PROJECT_DIR$/src/code.local/gin/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/gin/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code.local/leecode/getSameNumbs.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/code.local/leecode/getSameNumbs.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,7 @@
   </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../Program Files/Go" />
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -33,8 +32,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
   </component>
-  <component name="GoLibraries">
-    <option name="indexEntireGoPath" value="false" />
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="1362b565-410d-43a6-9d0a-66d2177424f8" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/internal/bytealg/bytealg.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/sort/slice.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/sort/sort.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/strings/strings.go" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="23fSVW1RqXAzvckGk2Eoc9jEMm7" />
   <component name="ProjectLevelVcsManager">
@@ -58,9 +63,17 @@
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="goland.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build leecode">
+    <configuration name="go build Fiber.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/goroutine/Fiber.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build getSameNumbs.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="unit_go" />
       <working_directory value="$PROJECT_DIR$" />
@@ -69,8 +82,37 @@
       <filePath value="$PROJECT_DIR$/src/code.local/leecode/getSameNumbs.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build goroutine.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/goroutine/goroutine.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build leecode" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$/src/code.local/leecode" />
+      <kind value="FILE" />
+      <package value="leecode" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/leecode/getLongestPrefix.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test01.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/gin/test01.go" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build leecode" />
+        <item itemvalue="Go Build.go build goroutine.go" />
+        <item itemvalue="Go Build.go build Fiber.go" />
+        <item itemvalue="Go Build.go build test01.go" />
         <item itemvalue="Go Build.go build getSameNumbs.go" />
       </list>
     </recent_temporary>
@@ -130,9 +172,17 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fixed: add workspace.xml" />
     <MESSAGE value="feat: add the class of unsafe" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add the class of unsafe" />
+    <MESSAGE value="feat: test trace in web" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: test trace in web" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="DlvErrorBreakpoint" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

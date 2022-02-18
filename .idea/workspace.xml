@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c43d4f93-8432-42dc-ae47-2538a1bc3d2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/code.local/leecode/deleteArray/deleteArray.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code.local/leecode/deleteArray/deleteRepeatArray.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code.local/leecode/rotateArray/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code.local/leecode/rotateArray/rotateArray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/closure/addClosure.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/closure/callbackTwoClosure.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/closure/errorClosure.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/test1/add_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code.local/gin/test01.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/code.local/gin/test01.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="Go Application" />
       </list>
     </option>
   </component>
@@ -39,6 +39,7 @@
     <option name="defaultAccountId" value="1362b565-410d-43a6-9d0a-66d2177424f8" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/testing/testing.go" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/internal/bytealg/bytealg.go" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/sort/slice.go" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/sort/sort.go" root0="SKIP_INSPECTION" />
@@ -55,7 +56,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -73,58 +74,56 @@
       <recent name="D:\project_code\sakura\unit_go\src\code.local\leecode\rotateArray" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build leecode/deleteArray (1)">
-    <configuration name="go build leecode (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$/src/code.local/leecode" />
-      <kind value="PACKAGE" />
-      <package value="leecode" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/leecode/rotateArray.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build leecode/deleteArray (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$/src/code.local/leecode" />
-      <kind value="FILE" />
-      <package value="leecode/deleteArray" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/leecode/deleteArray/deleteRepeatArray.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build leecode/deleteArray" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$/src/code.local/leecode" />
-      <kind value="FILE" />
-      <package value="leecode/deleteArray" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/leecode/deleteArray/deleteArray.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build rotateArray.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$/src/code.local/leecode/rotateArray" />
-      <kind value="PACKAGE" />
-      <package value="rotateArray.go" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/leecode/rotateArray/rotateArray.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build test01.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build errorClosure.go">
+    <configuration name="go build addClosure.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="unit_go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/gin/test01.go" />
+      <filePath value="$PROJECT_DIR$/src/code.local/closure/addClosure.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build callbackTwoClosure.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/closure/callbackTwoClosure.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build errorClosure.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/closure/errorClosure.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build sequence.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/closure/sequence.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BenchmarkRemoveEles in add_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$/src/code.local/test1" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/test1/add_test.go" />
+      <framework value="gobench" />
+      <pattern value="^\QBenchmarkRemoveEles\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build leecode/deleteArray (1)" />
-        <item itemvalue="Go Build.go build leecode/deleteArray" />
-        <item itemvalue="Go Build.go build rotateArray.go" />
-        <item itemvalue="Go Build.go build leecode (1)" />
-        <item itemvalue="Go Build.go build test01.go" />
+        <item itemvalue="Go Build.go build errorClosure.go" />
+        <item itemvalue="Go Build.go build callbackTwoClosure.go" />
+        <item itemvalue="Go Build.go build addClosure.go" />
+        <item itemvalue="Go Build.go build sequence.go" />
+        <item itemvalue="Go Test.BenchmarkRemoveEles in add_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +184,9 @@
     <MESSAGE value="feat: add the class of unsafe" />
     <MESSAGE value="feat: test trace in web" />
     <MESSAGE value="feat: change some codes." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: change some codes." />
+    <MESSAGE value="feat: add leecode about array." />
+    <MESSAGE value="feat: add sequence to increase number." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add sequence to increase number." />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

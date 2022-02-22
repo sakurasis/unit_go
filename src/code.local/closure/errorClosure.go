@@ -22,5 +22,8 @@ func testError(a, b int) (i int, err error) {
 
  */
 func main() {
-	testError(2, 0)
+	_, err := testError(2, 0)
+	if err != nil {
+		return
+	}
 }

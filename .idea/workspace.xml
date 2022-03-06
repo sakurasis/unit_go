@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c43d4f93-8432-42dc-ae47-2538a1bc3d2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/code.local/leecode/deleteArray/deleteArray.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code.local/leecode/deleteArray/deleteRepeatArray.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code.local/leecode/rotateArray/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code.local/leecode/rotateArray/rotateArray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/colly/cryptocoinsCap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/colly/requestBaidu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/slice/testSlice.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code.local/gin/test01.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/code.local/gin/test01.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +20,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="Go Application" />
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../Program Files/Go" />
+  <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -35,14 +35,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="1362b565-410d-43a6-9d0a-66d2177424f8" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/internal/bytealg/bytealg.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/sort/slice.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/sort/sort.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Go/src/strings/strings.go" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/local/go/src/net/http/status.go" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/local/go/src/internal/race/norace.go" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/local/go/src/runtime/proc.go" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="23fSVW1RqXAzvckGk2Eoc9jEMm7" />
   <component name="ProjectLevelVcsManager">
@@ -55,7 +62,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -73,14 +80,14 @@
       <recent name="D:\project_code\sakura\unit_go\src\code.local\leecode\rotateArray" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build leecode/deleteArray (1)">
-    <configuration name="go build leecode (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build test01/src/code.local/cothey (1)">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$/src/code.local/leecode" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="leecode" />
+      <package value="test01" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/leecode/rotateArray.go" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <configuration name="go build leecode/deleteArray (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -101,34 +108,64 @@
       <filePath value="$PROJECT_DIR$/src/code.local/leecode/deleteArray/deleteArray.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build rotateArray.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$/src/code.local/leecode/rotateArray" />
-      <kind value="PACKAGE" />
-      <package value="rotateArray.go" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/leecode/rotateArray/rotateArray.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build test01.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build test01/src/code.local/cothey (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="unit_go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
+      <package value="test01/src/code.local/cothey" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/gin/test01.go" />
+      <filePath value="$PROJECT_DIR$/src/code.local/cothey/cryptocoinsCap.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test01/src/code.local/cothey" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="test01/src/code.local/cothey" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/cothey/requestBaidu.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test01/src/code.local/slice" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="test01/src/code.local/slice" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/slice/testSlice.go" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <package value="test01" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build test01/src/code.local/cothey (1)" />
+        <item itemvalue="Go Build.go build test01/src/code.local/cothey" />
+        <item itemvalue="Go Build.go build test01/src/code.local/slice" />
         <item itemvalue="Go Build.go build leecode/deleteArray (1)" />
         <item itemvalue="Go Build.go build leecode/deleteArray" />
-        <item itemvalue="Go Build.go build rotateArray.go" />
-        <item itemvalue="Go Build.go build leecode (1)" />
-        <item itemvalue="Go Build.go build test01.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c43d4f93-8432-42dc-ae47-2538a1bc3d2b" name="Changes" comment="" />
+      <created>1646419240193</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646419240193</updated>
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>

@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c43d4f93-8432-42dc-ae47-2538a1bc3d2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code.local/colly/cryptocoinsCap.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code.local/colly/requestBaidu.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code.local/slice/testSlice.go" afterDir="false" />
+    <list default="true" id="c43d4f93-8432-42dc-ae47-2538a1bc3d2b" name="Changes" comment="feat： add colly">
+      <change afterPath="$PROJECT_DIR$/src/code.local/algorithm/bitsfunc/calculate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/algorithm/sampleLinkedList/Node.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/algorithm/sampleLinkedList/simpleLinkList.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/colly/requestBaidu copy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/structs/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/unsafe/structAlignment.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/unsafe/typeSizeof.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.local/colly/requestBaidu.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/code.local/colly/requestBaidu.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +47,21 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="1362b565-410d-43a6-9d0a-66d2177424f8" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file:///usr/local/go/src/net/http/status.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../go/pkg/mod/github.com/gocolly/colly@v1.2.0/htmlelement.go" root0="SKIP_INSPECTION" />
     <setting file="file:///usr/local/go/src/internal/race/norace.go" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/local/go/src/net/http/status.go" root0="SKIP_INSPECTION" />
     <setting file="file:///usr/local/go/src/runtime/proc.go" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/local/go/src/runtime/slice.go" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/local/go/src/sync/atomic/doc.go" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/local/go/src/sync/atomic/value.go" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/local/go/src/sync/atomic/value_test.go" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="23fSVW1RqXAzvckGk2Eoc9jEMm7" />
   <component name="ProjectLevelVcsManager">
@@ -60,98 +72,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="configurable..is.expanded" value="false" />
-    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go Application",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "configurable..is.expanded": "true",
+    "configurable.GoLibrariesConfigurable.is.expanded": "true",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/Users/sakurayang",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/code.local/algorithm/sampleLinkedList" />
       <recent name="D:\project_code\sakura\unit_go\src\code.local\leecode\rotateArray" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build test01/src/code.local/cothey (1)">
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+  <component name="RunManager" selected="Go Build.go build test01/src/code.local/algorithm/bitsfunc">
+    <configuration name="go build compoundStruct.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="test01" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/structs/compoundStruct.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test01/src/code.local/algorithm" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="unit_go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="test01" />
+      <package value="test01/src/code.local/algorithm" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/algorithm/simpleLinkList.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build leecode/deleteArray (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build test01/src/code.local/algorithm/bitsfunc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$/src/code.local/leecode" />
-      <kind value="FILE" />
-      <package value="leecode/deleteArray" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="test01/src/code.local/algorithm/bitsfunc" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/leecode/deleteArray/deleteRepeatArray.go" />
+      <filePath value="$PROJECT_DIR$/src/code.local/algorithm/bitsfunc/calculate.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build leecode/deleteArray" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$/src/code.local/leecode" />
-      <kind value="FILE" />
-      <package value="leecode/deleteArray" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/leecode/deleteArray/deleteArray.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build test01/src/code.local/cothey (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build test01/src/code.local/unsafe" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="unit_go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="test01/src/code.local/cothey" />
+      <package value="test01/src/code.local/unsafe" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/cothey/cryptocoinsCap.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build test01/src/code.local/cothey" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="test01/src/code.local/cothey" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/cothey/requestBaidu.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build test01/src/code.local/slice" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="test01/src/code.local/slice" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/slice/testSlice.go" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="DIRECTORY" />
-      <package value="test01" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
+      <filePath value="$PROJECT_DIR$/src/code.local/unsafe/structAlignment.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build test01/src/code.local/cothey (1)" />
-        <item itemvalue="Go Build.go build test01/src/code.local/cothey" />
-        <item itemvalue="Go Build.go build test01/src/code.local/slice" />
-        <item itemvalue="Go Build.go build leecode/deleteArray (1)" />
-        <item itemvalue="Go Build.go build leecode/deleteArray" />
+        <item itemvalue="Go Build.go build test01/src/code.local/algorithm/bitsfunc" />
+        <item itemvalue="Go Build.go build test01/src/code.local/unsafe" />
+        <item itemvalue="Go Build.go build test01/src/code.local/algorithm" />
+        <item itemvalue="Go Build.go build compoundStruct.go" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +149,14 @@
       <option name="presentableId" value="Default" />
       <updated>1646419240193</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat： add colly">
+      <created>1646548945493</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646548945494</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +207,6 @@
         <entry key="759997f6-3015-43d1-9575-5750a546b4dd" value="TOOL_WINDOW" />
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -222,10 +214,11 @@
     <MESSAGE value="feat: add the class of unsafe" />
     <MESSAGE value="feat: test trace in web" />
     <MESSAGE value="feat: change some codes." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: change some codes." />
+    <MESSAGE value="feat： add colly" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat： add colly" />
   </component>
   <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

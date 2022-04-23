@@ -21,7 +21,6 @@ func add(x, y int) int {
 }
 
 // sub the value of which is y subtracted from x
-// the method that use the absoluti
 func sub(x, y int) int {
 	return add(x, -y)
 }

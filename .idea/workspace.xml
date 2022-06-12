@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c43d4f93-8432-42dc-ae47-2538a1bc3d2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/code.local/algorithm/singleLoopLinkedList/SingleLoopLinkedList.go" afterDir="false" />
+    <list default="true" id="c43d4f93-8432-42dc-ae47-2538a1bc3d2b" name="Changes" comment="feat：add josephNumber">
+      <change afterPath="$PROJECT_DIR$/src/code.local/interface/appendInterface.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/interface/appendInterface.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code.local/algorithm/bitsfunc/calculate.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/code.local/algorithm/bitsfunc/calculate.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,14 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="bfb116cb-8d58-470c-ae2e-d07f8650ef12" />
+        <option name="url" value="https://github.com/sakuralins/unit_go.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="true" />
   </component>
@@ -69,6 +77,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultGoTemplateProperty&quot;: &quot;Go Application&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
@@ -78,8 +88,10 @@
     &quot;configurable..is.expanded&quot;: &quot;true&quot;,
     &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sakurayang&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/sakurayang/unit_go&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;go.dep&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -88,31 +100,13 @@
       <recent name="D:\project_code\sakura\unit_go\src\code.local\leecode\rotateArray" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build test01/src/code.local/algorithm/singleLoopLinkedList">
+  <component name="RunManager" selected="Go Build.go build test01/src/code.local/interface">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="unit_go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build compoundStruct.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="test01" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/structs/compoundStruct.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build test01/src/code.local/algorithm" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="test01/src/code.local/algorithm" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/algorithm/simpleLinkList.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build test01/src/code.local/algorithm/bitsfunc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -124,13 +118,31 @@
       <filePath value="$PROJECT_DIR$/src/code.local/algorithm/bitsfunc/calculate.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build test01/src/code.local/algorithm/singleLoopLinkedList (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="test01/src/code.local/algorithm/singleLoopLinkedList" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/algorithm/singleLoopLinkedList/josephNumber.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build test01/src/code.local/algorithm/singleLoopLinkedList" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="unit_go" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
+      <kind value="FILE" />
       <package value="test01/src/code.local/algorithm/singleLoopLinkedList" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/src/code.local/algorithm/singleLoopLinkedList/SingleLoopLinkedList.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test01/src/code.local/interface" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="test01/src/code.local/interface" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/interface/appendInterface.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build test01/src/code.local/unsafe" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -153,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build test01/src/code.local/algorithm/singleLoopLinkedList" />
+        <item itemvalue="Go Build.go build test01/src/code.local/interface" />
         <item itemvalue="Go Build.go build test01/src/code.local/algorithm/bitsfunc" />
+        <item itemvalue="Go Build.go build test01/src/code.local/algorithm/singleLoopLinkedList (1)" />
+        <item itemvalue="Go Build.go build test01/src/code.local/algorithm/singleLoopLinkedList" />
         <item itemvalue="Go Build.go build test01/src/code.local/unsafe" />
-        <item itemvalue="Go Build.go build test01/src/code.local/algorithm" />
-        <item itemvalue="Go Build.go build compoundStruct.go" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650463703925</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat：add loopLinkedList">
+      <created>1650728924224</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650728924224</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +247,11 @@
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_GENERIC_TABS">
@@ -244,7 +268,9 @@
     <MESSAGE value="feat: change some codes." />
     <MESSAGE value="feat： add colly" />
     <MESSAGE value="feat： bit operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat： bit operations" />
+    <MESSAGE value="feat：add loopLinkedList" />
+    <MESSAGE value="feat：add josephNumber" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat：add josephNumber" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

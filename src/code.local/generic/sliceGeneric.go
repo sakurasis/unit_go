@@ -12,5 +12,5 @@ func assembleSlice[T any](s []T)  {
 
 func main() {
 	assembleSlice[int]([]int{1,2,3,4})
-	assembleSlice([]string{"champion", "edg"})
+	assembleSlice[string]([]string{"champion", "edg"})
 }

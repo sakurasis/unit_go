@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c43d4f93-8432-42dc-ae47-2538a1bc3d2b" name="Changes" comment="feat：add josephNumber">
+      <change afterPath="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/go.mod" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/insertion_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/quick_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/selector_sort.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pkg/mod/github.com/davecgh/go-spew@v1.1.1/spew/bypass.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pkg/mod/github.com/davecgh/go-spew@v1.1.1/spew/bypasssafe.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pkg/mod/github.com/davecgh/go-spew@v1.1.1/spew/common.go" afterDir="false" />
@@ -2576,6 +2579,7 @@
       <change afterPath="$PROJECT_DIR$/src/pkg/mod/gopkg.in/yaml.v2@v2.2.8/yamlh.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pkg/mod/gopkg.in/yaml.v2@v2.2.8/yamlprivateh.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/bubble_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/bubble_sort.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/insertion_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/insertion_sort.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -2586,8 +2590,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go Application" />
         <option value="Go File" />
+        <option value="Go Application" />
       </list>
     </option>
   </component>
@@ -2635,31 +2639,41 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="configurable..is.expanded" value="true" />
-    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="false" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="settings.editor.selected.configurable" value="goland.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project_code\sakura\unit_go\src\code.local\algorithm\sortAlgorithm" />
       <recent name="$PROJECT_DIR$/src/code.local/algorithm/sampleLinkedList" />
       <recent name="D:\project_code\sakura\unit_go\src\code.local\leecode\rotateArray" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build insertion_sort.go">
+  <component name="RunManager" selected="Go Test.BenchmarkSelectionSort in code.local/algorithm/sortAlgorithm">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="unit_go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build code.local/algorithm/sortAlgorithm" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm" />
+      <kind value="FILE" />
+      <package value="code.local/algorithm/sortAlgorithm" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/selector_sort.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build insertion_sort.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -2670,33 +2684,6 @@
       <filePath value="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/insertion_sort.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build test01/src/code.local/algorithm/bitsfunc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="test01/src/code.local/algorithm/bitsfunc" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/algorithm/bitsfunc/calculate.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build test01/src/code.local/algorithm/singleLoopLinkedList (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="test01/src/code.local/algorithm/singleLoopLinkedList" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/algorithm/singleLoopLinkedList/josephNumber.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build test01/src/code.local/interface" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="unit_go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="test01/src/code.local/interface" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/code.local/interface/appendInterface.go" />
-      <method v="2" />
-    </configuration>
     <configuration name="BenchmarkFib in insertion_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="unit_go" />
       <working_directory value="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm" />
@@ -2705,6 +2692,27 @@
       <filePath value="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/insertion_test.go" />
       <framework value="gobench" />
       <pattern value="^\QBenchmarkFib\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BenchmarkInsertionSort in insertion_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/insertion_test.go" />
+      <framework value="gobench" />
+      <pattern value="^\QBenchmarkInsertionSort\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BenchmarkSelectionSort in code.local/algorithm/sortAlgorithm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="unit_go" />
+      <working_directory value="$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm" />
+      <kind value="PACKAGE" />
+      <package value="code.local/algorithm/sortAlgorithm" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gobench" />
+      <pattern value="^\QBenchmarkSelectionSort\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -2718,11 +2726,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build insertion_sort.go" />
+        <item itemvalue="Go Test.BenchmarkSelectionSort in code.local/algorithm/sortAlgorithm" />
+        <item itemvalue="Go Build.go build code.local/algorithm/sortAlgorithm" />
+        <item itemvalue="Go Test.BenchmarkInsertionSort in insertion_test.go" />
         <item itemvalue="Go Test.BenchmarkFib in insertion_test.go" />
-        <item itemvalue="Go Build.go build test01/src/code.local/interface" />
-        <item itemvalue="Go Build.go build test01/src/code.local/algorithm/bitsfunc" />
-        <item itemvalue="Go Build.go build test01/src/code.local/algorithm/singleLoopLinkedList (1)" />
+        <item itemvalue="Go Build.go build insertion_sort.go" />
       </list>
     </recent_temporary>
   </component>
@@ -2807,11 +2815,6 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="759997f6-3015-43d1-9575-5750a546b4dd" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
@@ -2824,10 +2827,22 @@
     <MESSAGE value="feat： bit operations" />
     <MESSAGE value="feat：add loopLinkedList" />
     <MESSAGE value="feat：add josephNumber" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat：add josephNumber" />
+    <MESSAGE value="feat：add the sort algorithm is insertion" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat：add the sort algorithm is insertion" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="NONE" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/code.local/algorithm/sortAlgorithm/insertion_test.go</url>
+          <line>4</line>
+          <log-expression expression="ackage main&#10;&#10;import &quot;testing&quot;&#10;var arr = []int{6, 5, 3, 1, 8, 7, 2, 4}&#10;&#10;func BenchmarkInsertionSort(b *testing.B) {&#10;&#9;for i := 0; i &lt; b.N; i++ {&#10;&#9;&#9;arr = InsertionSort(arr)&#10;&#9;}&#10;}&#10;&#10;func BenchmarkBubbleSort(b *testing.B) {&#10;&#9;for i := 0; i &lt; b.N; i++ {&#10;&#9;&#9;arr = bubbleSort(arr)&#10;&#9;}&#10;}&#10;" language="go" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="DlvErrorBreakpoint" />
       </default-breakpoints>

@@ -4,9 +4,7 @@ createTime: 2022-06-16
 */
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // InsertionSort insert the special value,
 // and then compare with the next value from the array.

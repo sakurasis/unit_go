@@ -11,7 +11,7 @@ import "fmt"
 // l the index of the first element
 // r the index of the last element
 func quickSort(arr []int, l int, r int) {
-	if l > r {
+	if l >= r {
 		return
 	}
 	p := getStandardIndex(arr, l, r)
@@ -22,7 +22,16 @@ func quickSort(arr []int, l int, r int) {
 // getStandardIndex get the pivot's index, actually.
 func getStandardIndex(arr []int, l int, r int) int {
 	// todo
-	return 0
+	pivot := arr[r]
+	idx := l
+	for i := l; i < r; i++ {
+		if arr[i] < pivot {
+			arr[idx], arr[i] = arr[i], arr[idx]
+			idx++
+		}
+	}
+	arr[idx], arr[r] = pivot, arr[idx]
+	return idx
 }
 
 func main() {

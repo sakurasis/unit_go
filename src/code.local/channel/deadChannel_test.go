@@ -9,7 +9,7 @@ import "testing"
 func TestGoroutine(t *testing.T) {
 	c := make(chan int)
 	c <- 666
-	<-c
+	//<-c
 }
 
 func TestBeforeGoroutine(t *testing.T) {

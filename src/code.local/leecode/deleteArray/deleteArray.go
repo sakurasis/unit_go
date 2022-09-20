@@ -1,3 +1,6 @@
+//go:build ignore
+// +build ignore
+
 /*
 author:admin
 createTime: 2022/01/28 14:50

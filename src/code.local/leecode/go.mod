@@ -1,3 +1,3 @@
-module leecode
+module code.local/leecode
 
-go 1.17
+go 1.19

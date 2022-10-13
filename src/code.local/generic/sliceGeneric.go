@@ -1,3 +1,4 @@
+// build ignore
 package main
 
 import (
@@ -12,20 +13,8 @@ func assembleSlice[T comparable](s []T)  {
 	_, _ = fmt.Print("\n")
 }
 
-func Sum(a,b interface{}) interface{} {
-	if reflect.TypeOf(a).Kind() != reflect.TypeOf(b).Kind() {
-        return nil
-    }
-    switch reflect.TypeOf(a).Kind() {
-	case reflect.Int:
-		return reflect.ValueOf(a).Int() + reflect.ValueOf(b).Int()
-	case reflect.Float64:
-		return reflect.ValueOf(a).Float() + reflect.ValueOf(b).Float()
-	case reflect.String:
-		return reflect.ValueOf(a).String() + reflect.ValueOf(b).String()
-	default:
-		return nil
-	}
+type CusError interface{
+	Error() string
 }
 
 type Float interface {
@@ -52,12 +41,49 @@ func func1[T Ordered] (a T){
 	fmt.Printf("current value is : %v\n", reflect.TypeOf(a))
 }
 
+type CusInterface [T int|string] interface {
+    int | string
+    SetName(d T) T
+    GetName() T
+}
+
+type CusInt int
+
+type CusInteger interface {
+	~int | interface{CusInt}
+}
+
+type CusStr string
+
+func (c CusStr) SetName(n string) string {
+	return n
+}
+
+type Str struct {
+	Name string
+}
+
+type Reader interface {
+	Read(p []byte) (n int, err error)
+}
+
+type Writer interface {
+	Write(p []byte) (n int, err error)
+}
+
+type CusRead[T interface{*Reader | *Writer}] []T
+
+
+
 func main() {
+
+	sum := func[T int|float32|float64|string] (a, b T) T {
+		return a +b;
+	}
+	fmt.Println(sum(1, 2))
+
 	func1("a")
-	a :=Sum(1,2)
-	b := Sum(1.1,2.1)
-	c := Sum("1","2")
-	fmt.Printf("a:%v\t b:%v c:%v\n", a, b, c)
 	assembleSlice([]int{1,2,3,4})
 	assembleSlice([]string{"champion", "edg"})
 }
+

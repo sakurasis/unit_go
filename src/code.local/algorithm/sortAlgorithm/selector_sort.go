@@ -22,6 +22,7 @@ func selectionSort(arr []int) {
 		// the last value
 		arr[idx] = arr[len(arr)-1-i]
 		arr[len(arr)-1-i] = temp
+		fmt.Println(arr)
 	}
 }
 
@@ -31,4 +32,5 @@ func main() {
 	for _, v := range arr {
 		fmt.Printf("%d\t", v)
 	}
+	fmt.Printf("\n")
 }

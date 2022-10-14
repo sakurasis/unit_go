@@ -44,10 +44,26 @@ func insertionSort1(arr []int) []int {
 	return arr
 }
 
+func insertionSort2(arr []int) []int {
+	for i, v := range arr {
+		preIndex := i - 1
+		for preIndex >= 0 && arr[preIndex] > v {
+			arr[preIndex+1] = arr[preIndex]
+			preIndex -= 1
+		}
+		arr[preIndex+1] = v
+		fmt.Println(arr)
+	}
+	return arr
+}
+
 func main() {
 	arr := []int{6, 5, 3, 1, 8, 7, 2, 4}
-	arr = insertionSort1(arr)
-	for _, v := range arr {
-		fmt.Printf("%d\t", v)
-	}
+	//arr = insertionSort1(arr)
+	//for _, v := range arr {
+	//	fmt.Printf("%d\t", v)
+	//}
+	arr = insertionSort2(arr)
+	fmt.Println("------------------------------")
+	fmt.Println(arr)
 }

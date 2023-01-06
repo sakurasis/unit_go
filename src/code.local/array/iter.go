@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	arr := [...]int{99: -1}
@@ -13,6 +15,7 @@ func main() {
 		fmt.Printf("%d\t", v1)
 		sum += v1
 	}
+	fmt.Println(num[5])
 	fmt.Println("the sum is ", sum)
 	fmt.Printf("the array's length is %d\n", len(arr))
 }

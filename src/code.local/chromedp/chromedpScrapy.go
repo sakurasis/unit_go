@@ -12,12 +12,11 @@ import (
 var username string = ""
 var password string = ""
 var url = "https://10.123.25.13/login"
-var selector = "body"
 var name = `document.querySelector("#rc-tabs-1-panel-pwd > div > form")`
 
 func main() {
 
-	content, err := GetHtmlContent(url, selector, name)
+	content, err := GetHtmlContent()
 	if err != nil {
 		log.Fatal(err)
 		return
@@ -25,15 +24,18 @@ func main() {
 	fmt.Println(content)
 }
 
-func GetHtmlContent(url, selector string, sel interface{}) (string, error) {
+func GetHtmlContent() (bool, error) {
 	agent := randomUserAgent()
 
 	options := []chromedp.ExecAllocatorOption{
 		chromedp.ExecPath("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"),
-		chromedp.Flag("headless", true),
+		chromedp.Flag("headless", false),
 		chromedp.Flag("blink-settings", "imagesEnabled=true"),
 		chromedp.UserAgent(agent),
 		chromedp.IgnoreCertErrors,
+		chromedp.NoDefaultBrowserCheck,
+		chromedp.NoFirstRun,
+		chromedp.WindowSize(1080, 720),
 		chromedp.Flag("disable-web-security", true),
 	}
 
@@ -41,37 +43,39 @@ func GetHtmlContent(url, selector string, sel interface{}) (string, error) {
 
 	// 创建上下文传递配置参数
 	ctx, _ := chromedp.NewExecAllocator(context.Background(), options...)
-	// 创建上下文对象
+	// 创建上下文对象实例
 	chromectx, cancel := chromedp.NewContext(ctx, chromedp.WithLogf(log.Printf))
 
-	err := chromedp.Run(chromectx, make([]chromedp.Action, 0, 1)...)
-	if err != nil {
-		log.Fatal(err)
-		return "", err
-	}
 	//创建一个上下文，超时时间为40s
 	timeoutCtx, cancel := context.WithTimeout(chromectx, 40*time.Second)
 	defer cancel()
-	var htmlContent string
-	err = chromedp.Run(timeoutCtx)
+	// 验证码
+	var captcha string
+
+	err := chromedp.Run(timeoutCtx, click(captcha))
 	if err != nil {
 		log.Printf("Run err : %v\n", err)
-		return "", err
+		return false, err
 	}
 	//log.Println(htmlContent)
 
-	return htmlContent, nil
+	return true, nil
 }
 
-func click(sel interface{}, htmlContent string) chromedp.Tasks {
+func getContextByCaptcha() chromedp.Tasks {
+	return chromedp.Tasks{}
+}
+
+// #rc-tabs-1-panel-pwd > div > form > div.b_captcha > div.b_c > img
+func click(captcha string) chromedp.Tasks {
 	return chromedp.Tasks{
 		chromedp.Navigate(url),
-		chromedp.WaitReady(selector, chromedp.ByQuery),
+		chromedp.WaitReady(`document.querySelector("#root > div > header > div.l_right > div.r_login_box")`, chromedp.ByJSPath),
 		chromedp.SetValue(`#username`, username, chromedp.ByID),
 		chromedp.SetValue(`#password`, password, chromedp.ByID),
-		chromedp.OuterHTML(sel, &htmlContent, chromedp.ByJSPath),
-		chromedp.Click(`#submit`, chromedp.NodeVisible),
-		chromedp.Sleep(150 * time.Second),
+		chromedp.SetValue("#captcha", captcha, chromedp.ByID),
+		chromedp.Click(`#rc-tabs-1-panel-pwd > div > form > button`, chromedp.NodeVisible),
+		chromedp.Sleep(10 * time.Second),
 	}
 }
 

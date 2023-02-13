@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/gocolly/colly v1.2.0
-	gocv.io/x/gocv v0.32.1
+	gocv.io/x/gocv v0.31.0
 )
 
 require (

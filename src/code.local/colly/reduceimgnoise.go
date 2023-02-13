@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	mat := gocv.IMRead("test.png", gocv.IMReadColor)
+	mat := gocv.IMRead("test1.png", gocv.IMReadColor)
 	defer mat.Close()
 
 	bilatera := gocv.NewMat()

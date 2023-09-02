@@ -31,4 +31,30 @@ func main() {
 	case <-time.After(5 * time.Second):
 		fmt.Println("no message can be received.")
 	}
+	fmt.Println("-------------------------------")
+	s := make(chan int)
+	e := make(chan int)
+
+	go func() {
+		for i := 0; i < 10 ; i ++ {
+			fmt.Println(<-s)
+		}
+		e <- 0
+	}()
+
+	fibonacii(s, e)
+}
+
+func fibonacii(s, e chan int) {
+	x, y := 1, 1
+	for {
+		select {
+		case s <- x :
+			x  = y
+			y = x + y
+
+		case <-e :
+			return
+		}
+	}
 }

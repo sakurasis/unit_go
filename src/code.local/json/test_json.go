@@ -20,4 +20,14 @@ func main() {
 	}
 	
 	fmt.Printf("json:%s\n",str)
+
+	var mv Movie 
+
+	jsonstr := "{\"name\":\"avtar\",\"year\":2002,\"score\":9.00,\"actors\":[\"lily\",\"tomperson\"]}"
+
+	err = json.Unmarshal([]byte(jsonstr), &mv)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(mv)
 }

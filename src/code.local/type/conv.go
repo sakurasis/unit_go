@@ -1,8 +1,7 @@
-package
+package main
 
-type
 import (
-"conv"
+	"conv"
 )
 
 func main() {
